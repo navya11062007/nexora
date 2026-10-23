@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXORA | Student Fee Support</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a class="logo" href="#home">NEXORA</a>
+    <nav>
+        <a href="#how">How It Works</a>
+        <a href="#requests">Support Requests</a>
+        <a href="#apply">Apply for Support</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <p class="tagline">SMART EDUCATION · STUDENT SUPPORT</p>
+        <h1>Every Student Deserves a Chance to <span>Keep Learning.</span></h1>
+        <p>
+            NEXORA connects students who need college fee assistance
+            with people who want to support their education.
+        </p>
+        <a href="#apply" class="btn">Request Fee Support →</a>
+        <a href="#how" class="btn secondary">Learn More</a>
+    </div>
+
+    <div class="hero-card">
+        <div class="icon">🎓</div>
+        <p>YOUR FUTURE MATTERS</p>
+        <h2>Keep Your Education Moving</h2>
+        <div class="status">College verification required</div>
+    </div>
+</section>
+
+<section class="highlights">
+    <div>01 — Student Requests</div>
+    <div>02 — College Verification</div>
+    <div>03 — Admin Approval</div>
+    <div>04 — Support Tracking</div>
+</section>
+
+<section class="section" id="how">
+    <h2>How NEXORA Works</h2>
+    <p class="subtitle">A simple process for transparent student support.</p>
+
+    <div class="steps">
+        <div class="card">
+            <h3>01. Student Applies</h3>
+            <p>Students submit their college details and fee requirements.</p>
+        </div>
+        <div class="card">
+            <h3>02. Details Verified</h3>
+            <p>The admin verifies student and fee details with the college.</p>
+        </div>
+        <div class="card">
+            <h3>03. Request Approved</h3>
+            <p>Verified requests can be displayed to potential supporters.</p>
+        </div>
+        <div class="card">
+            <h3>04. Support Tracked</h3>
+            <p>Support progress is recorded transparently.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section requests" id="requests">
+    <h2>Student Support Requests</h2>
+    <p class="subtitle">Example requests for demonstration only.</p>
+
+    <div class="steps">
+        <div class="card">
+            <span class="badge">DEMO · NOT VERIFIED</span>
+            <h3>Semester Fee Assistance</h3>
+            <p>Sample fee-support request for a college semester.</p>
+            <h2>₹18,000</h2>
+            <button class="btn support-btn"
+                data-title="Semester Fee Assistance"
+                data-amount="18000">View Request</button>
+        </div>
+
+        <div class="card">
+            <span class="badge">DEMO · NOT VERIFIED</span>
+            <h3>Examination Fee Support</h3>
+            <p>Sample support request for examination fees.</p>
+            <h2>₹6,500</h2>
+            <button class="btn support-btn"
+                data-title="Examination Fee Support"
+                data-amount="6500">View Request</button>
+        </div>
+    </div>
+</section>
+
+<section class="section apply-section" id="apply">
+    <div>
+        <h2>Apply for Fee Support</h2>
+        <p>
+            Submit a sample request using the form.
+            This prototype does not process real applications or payments.
+        </p>
+    </div>
+
+    <form id="supportForm">
+        <h3>Student Request Form</h3>
+
+        <label for="studentName">Student Name</label>
+        <input id="studentName" name="studentName"
+               placeholder="Enter student name" required>
+
+        <label for="collegeName">College Name</label>
+        <input id="collegeName" name="collegeName"
+               placeholder="Enter college name" required>
+
+        <label for="course">Course and Year</label>
+        <input id="course" name="course"
+               placeholder="e.g. BCA, Year 2" required>
+
+        <label for="amount">Fee Amount (₹)</label>
+        <input id="amount" name="amount" type="number"
+               min="1" placeholder="Enter fee amount" required>
+
+        <label for="reason">Reason for Support</label>
+        <textarea id="reason" name="reason"
+                  placeholder="Explain why support is needed"
+                  required></textarea>
+
+        <button class="btn" type="submit">Submit Request</button>
+        <p id="formMessage" role="status"></p>
+    </form>
+</section>
+
+<footer>
+    <h3>NEXORA</h3>
+    <p>Connecting students with education support.</p>
+    <small>© <span id="year"></span> NEXORA Student Project</small>
+</footer>
+
+<dialog id="supportDialog">
+    <h3 id="dialogTitle">Support Request</h3>
+    <p id="dialogMessage"></p>
+    <p>This is a demo only. No payment will be processed.</p>
+    <button class="btn" id="closeDialog">Close</button>
+</dialog>
+
+<script src="script.js"></script>
+</body>
+</html>
